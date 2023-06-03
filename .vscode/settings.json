@@ -1,0 +1,6 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "./webapp/Cargo.toml"
+    ],
+    "rust-analyzer.showUnlinkedFileNotification": false
+}
