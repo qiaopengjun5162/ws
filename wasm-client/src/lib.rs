@@ -48,8 +48,12 @@ pub async fn main() -> Result<(), JsValue> {
         tr.append_child(&td)?;
 
         let td = document.create_element("td")?;
+        td.set_text_content(Some(c.name.as_str()));
+        tr.append_child(&td)?;
+
+        let td = document.create_element("td")?;
         td.set_text_content(Some(c.time.format("%Y-%m-%d").to_string().as_str()));
-        td.append_child(&td)?;
+        tr.append_child(&td)?;
 
         let td = document.create_element("td")?;
         if let Some(desc) = c.description.clone() {
