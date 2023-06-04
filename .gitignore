@@ -7,3 +7,4 @@
 */bin/
 
 */wasm-pack.log
+/wasm-client/www/node_modules
